@@ -1,5 +1,5 @@
 package myArrayList.util;
 
-public class FileDisplayInterface {
-
+public interface FileDisplayInterface {
+	public void writeToFile(String s);
 }

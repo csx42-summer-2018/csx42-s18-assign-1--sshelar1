@@ -23,6 +23,9 @@ public class MyArrayList{
 	}
 	
 	public void insertSorted(int newValue) {
+		if (newValue<0 || newValue>10000) {
+			return;
+		}
 		if (size==0) {
 			myarray[size] = newValue;
 			size++;

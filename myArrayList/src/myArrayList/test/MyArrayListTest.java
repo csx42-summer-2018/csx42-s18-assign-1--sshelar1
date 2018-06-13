@@ -1,5 +1,10 @@
 package myArrayList.test;
 
-public class MyArrayListTest {
+import myArrayList.MyArrayList;
+import myArrayList.util.Results;
 
+public class MyArrayListTest {
+	public void testMe(MyArrayList myArrayList, Results results) {
+		
+	}
 }

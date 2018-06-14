@@ -9,12 +9,12 @@ import java.io.Writer;
 public class Results implements FileDisplayInterface, StdoutDisplayInterface{
 
 	private File file;
-	private String outputString;
+	private StringBuilder outputString;
 	private BufferedWriter bufferedWriter;
 	
 	public Results(String string) {
 		// TODO Auto-generated constructor stub
-		outputString = null;
+		outputString = new StringBuilder();
 		file = new File(string);
 		try {
 			if (!file.exists()) {
@@ -26,7 +26,19 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface{
 			e.printStackTrace();
 		}
 	}
+	
+	public StringBuilder getOutputString() {
+		return outputString;
+	}
 
+	public void setOutputString(StringBuilder outputString) {
+		this.outputString = outputString;
+	}
+
+	public void storeNewResult(String string) {
+		outputString.append(string + "\n");
+	}
+	
 	@Override
 	public void writeToStdout(String s) {
 		// TODO Auto-generated method stub
@@ -38,7 +50,7 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface{
 		// TODO Auto-generated method stub
 		try {
 			bufferedWriter = new BufferedWriter(new FileWriter(file));
-			bufferedWriter.write("The sum of all the values in the array list is: " + s);
+			bufferedWriter.write(s + "\n");
 			bufferedWriter.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

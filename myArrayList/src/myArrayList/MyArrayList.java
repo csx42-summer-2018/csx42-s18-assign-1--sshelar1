@@ -86,4 +86,10 @@ public class MyArrayList{
 		}
 		return builder.toString();
 	}
+
+	public void reset() {
+		// TODO Auto-generated method stub
+		myarray = new int [50];
+		size = 0;
+	}
 }

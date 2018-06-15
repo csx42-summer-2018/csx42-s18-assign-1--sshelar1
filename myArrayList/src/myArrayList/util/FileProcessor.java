@@ -9,6 +9,9 @@ public class FileProcessor {
 	private File file;
 	private Scanner scanner;
 	
+	/**
+	 * constructor which sets the private data members to the default values
+	 */
 	public FileProcessor(String string) {
 		// TODO Auto-generated constructor stub
 		file = new File(string);
@@ -23,7 +26,11 @@ public class FileProcessor {
 			System.out.println(e.getMessage());
 		}
 	}
-
+	
+	/**
+	 * this method reads the elements line by line
+	 * @return
+	 */
 	public String readLine() {
 		while (scanner.hasNextLine()) {
 			return scanner.nextLine();

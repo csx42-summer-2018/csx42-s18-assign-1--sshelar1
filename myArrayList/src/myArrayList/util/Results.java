@@ -12,6 +12,9 @@ public class Results implements FileDisplayInterface, StdoutDisplayInterface{
 	private StringBuilder outputString;
 	private BufferedWriter bufferedWriter;
 	
+	/**
+	 * constructor which sets the private data members to the default values
+	 */
 	public Results(String string) {
 		// TODO Auto-generated constructor stub
 		outputString = new StringBuilder();

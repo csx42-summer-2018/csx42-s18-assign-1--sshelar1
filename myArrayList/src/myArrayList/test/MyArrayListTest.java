@@ -32,7 +32,11 @@ public class MyArrayListTest {
 		return results;
 		
 	}
-
+	
+	/**
+	 * this method checks the sum after resizing of array
+	 * @param myArrayList
+	 */
 	private void checkSumAfterResizing(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		for (int i = 1; i < 61; i++) {
@@ -47,6 +51,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 
+	/**
+	 * this method check for the resizing
+	 * @param myArrayList
+	 */
 	private void checkResizing(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < 55; i++) {
@@ -60,7 +68,10 @@ public class MyArrayListTest {
 		}
 		results.storeNewResult(resultString);
 	}
-
+	/**
+	 * if in the array there are no elements it checks for the sum
+	 * @param myArrayList
+	 */
 	private void checkSumOfEmptyArray(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		if (myArrayList.sum()==0) {
@@ -71,6 +82,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 
+	/**
+	 * this methods for the sum of elements inserted in a array
+	 * @param myArrayList
+	 */
 	private void checkSum(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		myArrayList.insertSorted(4);
@@ -84,6 +99,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 	
+	/**
+	 * this method checks the size of an array
+	 * and if the size is more than 50 it gives error
+	 */
 	private void checkSize(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		for(int i=0; i<50; i++) {
@@ -97,6 +116,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 	
+	/**
+	 * this method checks if there is no element present in the array
+	 * @param myArrayList
+	 */
 	private void checkIndexOfAbsentValue(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		myArrayList.insertSorted(1);
@@ -110,6 +133,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 	
+	/**
+	 * this method checks for the position of an element in the array
+	 * @param myArrayList
+	 */
 	private void checkPresentValuePosition(MyArrayList myArrayList) {
 		myArrayList.insertSorted(1);
 		myArrayList.insertSorted(4);
@@ -122,6 +149,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 	
+	/**
+	 * this method checks for the repeated elements in the array
+	 * @param myArrayList
+	 */
 	private void checkRepeatedNumberPosition(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		myArrayList.insertSorted(1);
@@ -135,6 +166,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 	
+	/**
+	 * this method checks for the invalid entry in the array
+	 * @param myArrayList
+	 */
 	private void checkInvalidInsert(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		myArrayList.insertSorted(1);
@@ -148,6 +183,10 @@ public class MyArrayListTest {
 		results.storeNewResult(resultString);
 	}
 	
+	/**
+	 * this method checks the deletion of element in the array
+	 * @param myArrayList
+	 */
 	private void checkRemoveValue(MyArrayList myArrayList) {
 		// TODO Auto-generated method stub
 		myArrayList.insertSorted(4);
